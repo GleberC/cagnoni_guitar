@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+
+
+
+:root {
+    /* Primary */
+
+    --Olive-Green: #3d550c;
+    --Lime-Green: #81b622;
+    --Yellow-Green: #ecf87f;
+    --Green: #59981a;
+
+    /* Neutral */
+    --Olive: #778a35;
+    --Sage-Green: #d1e2c4;
+    --Pewter: #ebebe8;
+    --Olive-Green: #31352e;
+
+}
+
+body {
+    background-color: var(--Olive);
+
+}
+
+.button_logo {
+    width: 15rem;
+    border-radius: .8rem;
+}
+
+.button_logo img {
+    background-color: var(--Pewter);
+
+
+}
+
+.p-menu ul {
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cagnoni_logo {
+    margin-top: 2rem;
+    padding:.3rem 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--Olive-Green) 0px 5px 15px;
+} 
+.p-menu__item{
+    font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal; 
+        padding: .3rem;
+}
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .galeria li {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--Olive-Green);
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  .bloco{
+    margin: 1rem 0;
+  }
+  
+  .bloco h1{ 
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;     
+  }
+
+  
+.bloco p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .text{
+    color: var(--Olive-Green);
+    text-align: center;
+  }
+
+  .text.title{
+    text-shadow: 1px 1px 2px var(--Yellow-Green);
+  }
+
+  .text.paragraph{
+    padding: 1.2rem;
+    text-align: justify;
+  }
+
+  .menu-social{
+    display: flex;
+   justify-content: center;
+   gap: 1rem;
+  }
+
+  a{
+    color: var(--Olive-Green);
+  }
+
+  .net{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: .5rem;
+  }
+  .btn-primary{
+    width: 15rem;
+    height: 3rem;
+    background-color: var(--Green);
+    border-radius: .8rem;
+  }
+  .btn-primary:hover{
+    transition: transform .8s ease;
+    background-color: var(--Yellow-Green);
+    transform: scale(1.10);
+    
+  }
+
+  @media (min-width: 768px) {
+    .p-menu__item{
+        font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            font-style: normal; 
+            padding: .8rem;
+    
+      }
+      .text.paragraph{
+        padding: 5rem;
+        text-align: center;
+        font-size: 24px;
+      }
+      .bloco{
+        margin: 5rem 0;
+      }
+      .text.title{
+        font-size: 40px;
+      }
+  }

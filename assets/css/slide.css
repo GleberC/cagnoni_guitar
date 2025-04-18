@@ -1,0 +1,124 @@
+:root {
+    /* Primary */
+
+    --Olive-Green: #3d550c;
+    --Lime-Green: #81b622;
+    --Yellow-Green: #ecf87f;
+    --Green: #59981a;
+
+    /* Neutral */
+    --Olive: #778a35;
+    --Sage-Green: #d1e2c4;
+    --Pewter: #ebebe8;
+    
+
+}
+
+body {
+    background-color: var(--Lime-Green);
+}
+
+.cagnoni_logo {
+    background-color: var(--Pewter);
+}
+
+.p-menu ul {
+    display: flex;
+}
+
+
+
+section.slider {
+    position: relative; /* <--- ESSENCIAL */
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+
+.slider-content input,
+.img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+}
+
+
+.nav-auto,
+.nav-manual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem; /* espaço entre o slider e os dots */
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid var(--Olive-Green);
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.manual-btn.actived{
+    background-color:var(--Olive-Green);
+}
+
+.nav-manual .manual-btn:hover,
+.nav-auto div:hover {
+  background-color: var(--Olive-Green);
+}
+
+/* Ativando a cor do dot selecionado */
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
+  background-color: var(--Olive-Green);
+}
+
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+/* #radio1:checked~.manual-btn{
+    background-color:var(--Olive-Green);
+} */
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+#radio1:checked ~ .nav-manual label[for="radio1"],
+#radio2:checked ~ .nav-manual label[for="radio2"],
+#radio3:checked ~ .nav-manual label[for="radio3"] {
+    background-color: var(--Olive-Green);
+}
+
+
+@media (min-width: 768px) {
+    .nav-manual .manual-btn,
+    .nav-auto div {
+      padding: 10px;
+    }
+  }
+  
+  
