@@ -146,6 +146,47 @@ gap: .5rem;
     
   }
 
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color:var(--Olive-Green);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background:var(--Yellow-Green);
+    padding: 1rem;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .modal img {
+    max-width: 100%;
+    height: auto;
+  }
+  #image-description{
+    
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    color: var(--Olive-Green);
+    margin-top: 1rem;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--Yellow-Green);
+  }
+  
+
   @media (min-width: 768px) {
     .p-menu__item{
         font-family: "Poetsen One", sans-serif;
@@ -166,4 +207,20 @@ gap: .5rem;
       .text.title{
         font-size: 40px;
       }
+      .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        max-width: 30%;
+        max-height: auto;
+      }
+      .modal img {
+         max-width: 80%; 
+      }
+      #image-description{
+    max-width: 70%;
+    text-align: center;
+      }
+
   }
