@@ -52,6 +52,11 @@ header {
     border-radius: 1rem;
     box-shadow: var(--Olive-Green) 0px 5px 15px;
 } 
+
+.menu_principal{
+  background-color: var(--Yellow-Green);
+  border-radius: .2rem;
+}
 .p-menu__item{
     font-family: "Poetsen One", sans-serif;
         font-weight: 400;
@@ -163,12 +168,13 @@ gap: .5rem;
     max-width: 80%;
     max-height: 80%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: .5rem;
   }
   
   .modal img {
     max-width: 100%;
     height: auto;
+    border-radius: .5rem;
   }
   #image-description{
     
@@ -217,6 +223,7 @@ gap: .5rem;
       }
       .modal img {
          max-width: 75%; 
+         
       }
       #image-description{
     max-width: 75%;
