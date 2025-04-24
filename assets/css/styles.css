@@ -193,6 +193,28 @@ gap: .5rem;
   }
   
 
+  #scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--Olive-Green);
+    color:var(--Yellow-Green);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    /* display: none; Inicialmente invisível */
+    font-size: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  #scroll-top-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+
   @media (min-width: 768px) {
     .p-menu__item{
         font-family: "Poetsen One", sans-serif;
