@@ -23,6 +23,56 @@ body {
     background-color: var(--Olive);
 
 }
+/* API CSS */
+.weather-box {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Pewter);
+  padding: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--Olive-Green);
+  width: 300px;
+  margin: 20px auto;
+}
+.cidade{
+  margin-bottom: 5px;
+}
+#get-weather{
+  background-color: var(--Lime-Green);
+  color: var(--Olive-Green);
+  width: 50px;
+  border-radius: .2rem;
+}
+#get-weather:hover{
+  background-color: var(--Yellow-Green);
+  color: var(--Olive-Green);
+  transition: 1s ease;
+}
+
+.umidade-box{
+  display: flex;
+
+}
+
+.weather-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.weather-box p {
+  margin: 5px 0;
+}
+
+.weather-box img {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+}
+/* API CSS */
+
 
 .button_logo {
     width: 15rem;
@@ -214,6 +264,13 @@ gap: .5rem;
     pointer-events: auto;
   }
   
+  @media (max-width: 600px) {
+    .weather-box {
+      width: 80%;
+      padding: 15px;
+    }
+  }
+
 
   @media (min-width: 768px) {
     .p-menu__item{

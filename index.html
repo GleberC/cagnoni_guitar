@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+  
   <header class="menu">
     <div class="cagnoni_logo volta">
       
@@ -92,7 +94,23 @@
 
   </header>
 
-
+  <div class="weather-box">
+    <h2 id="city-name">CLIMA</h2> 
+    <div class="cidade">
+      <input type="text" id="city-input" placeholder="Digite o nome da cidade">
+      <button id="get-weather">Buscar</button>
+    </div>
+     
+    <p id="temperature">Temperatura: </p>
+    
+    <div class="umidade-box">
+      <img id="weather-icon" alt="Ícone do tempo">
+      <p id="humidity">Umidade: </p>
+    </div>
+    
+    <p id="description">Descrição: </p>
+    
+  </div>
 
 
   <section class="bloco" id="sobre">
@@ -192,7 +210,7 @@
   </div>
   <button id="scroll-top-btn">▲</button>
 
-
+  <script src="./assets/scripts/app.js"></script>
   <script src="./assets/scripts/slider.js"></script>
   <script src="./assets/scripts/main.js"></script>
 </body>
