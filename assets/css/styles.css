@@ -4,18 +4,18 @@
 
 
 :root {
-    /* Primary */
+  /* Primary */
 
-    --Olive-Green: #3d550c;
-    --Lime-Green: #81b622;
-    --Yellow-Green: #ecf87f;
-    --Green: #59981a;
+  --Olive-Green-light: #3d550c;
+  --Lime-Green: #81b622;
+  --Yellow-Green: #ecf87f;
+  --Green: #59981a;
 
-    /* Neutral */
-    --Olive: #778a35;
-    --Sage-Green: #d1e2c4;
-    --Pewter: #ebebe8;
-    --Olive-Green: #31352e;
+  /* Neutral */
+  --Olive: #778a35;
+  --Sage-Green: #d1e2c4;
+  --Pewter: #ebebe8;
+  --Olive-Green: #1b2802;
 
 }
 

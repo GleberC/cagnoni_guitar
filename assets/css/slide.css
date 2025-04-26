@@ -57,6 +57,17 @@ section.slider {
     transition: 2s;
 }
 
+ .sb_title {
+    text-shadow: 2px 2px 2px var(--Yellow-Green);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 200px;
+    transition: bottom 1s ease-in-out;
+}   
+
 
 .nav-auto,
 .nav-manual {
@@ -86,11 +97,15 @@ section.slider {
 }
 
 /* Ativando a cor do dot selecionado */
+#radio1:checked ~ .nav-manual label[for="radio1"],
 #radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-manual label[for="radio2"],
 #radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-manual label[for="radio3"],
 #radio3:checked ~ .nav-auto .auto-btn3 {
-  background-color: var(--Olive-Green);
+    background-color: var(--Olive-Green);
 }
+
 
 
 #radio1:checked~.primeiro {
@@ -106,11 +121,6 @@ section.slider {
 
 #radio3:checked~.primeiro {
     margin-left: -50%;
-}
-#radio1:checked ~ .nav-manual label[for="radio1"],
-#radio2:checked ~ .nav-manual label[for="radio2"],
-#radio3:checked ~ .nav-manual label[for="radio3"] {
-    background-color: var(--Olive-Green);
 }
 
 

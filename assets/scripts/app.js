@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
+
+
 document.getElementById("get-weather").addEventListener("click", function () {
     const city = document.getElementById("city-input").value;
     if (city) {
