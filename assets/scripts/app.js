@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const apiKey = process.env.API_KEY;
 
 
@@ -13,7 +12,7 @@ document.getElementById("get-weather").addEventListener("click", function () {
   });
   
   function getWeather(city) {
-    const apiKey = "d974b8fea9f4314e2326d9c262b037b6";
+    // const apiKey = "d974b8fea9f4314e2326d9c262b037b6";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
   
     fetch(url)
