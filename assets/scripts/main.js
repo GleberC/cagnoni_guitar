@@ -25,14 +25,7 @@ window.addEventListener('click', (e) => {
   }
 });
 
-// Mostrar o botão quando o usuário rolar a página
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 200) {  // Muda 200 para a distância que achar ideal
-//     scrollTopBtn.style.display = 'block';
-//   } else {
-//     scrollTopBtn.style.display = 'none';
-//   }
-// });
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
       scrollTopBtn.classList.add('show');
