@@ -1,0 +1,2 @@
+// Este package.json serve apenas para o ambiente local (Node/Express)
+// A Vercel usa funções serverless diretamente em /api

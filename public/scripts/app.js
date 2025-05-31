@@ -8,7 +8,8 @@ document.getElementById("get-weather").addEventListener("click", function () {
 });
 
 function getWeather(city) {
-  const url = `/weather?city=${encodeURIComponent(city)}`;
+  const url = `/api/weather?city=${encodeURIComponent(city)}`;
+
 
   fetch(url)
     .then(response => response.json())

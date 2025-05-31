@@ -1,3 +1,7 @@
+// ⚠️ OBS: Este servidor Express é usado apenas para testes locais.
+// Em produção (Vercel), a API de clima foi migrada para uma função serverless em /api/weather.js
+
+
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
